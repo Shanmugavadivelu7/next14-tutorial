@@ -16,7 +16,7 @@
 .form button{
   padding: 20px;
   cursor: pointer;
-  background-color: var(--btn);
+  background-color: rgba(2, 2, 61, 0.849);
   color: var(--textColor);
   font-weight: bold;
   border: none;

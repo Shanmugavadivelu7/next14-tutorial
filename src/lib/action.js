@@ -96,7 +96,7 @@ export const handleLogout = async () => {
 };
 
 export const register = async (previousState, formData) => {
-  const { username, email, password, img, passwordRepeat } =
+  const { firstName, lastName, email, phoneNumber, password, img, passwordRepeat } =
     Object.fromEntries(formData);
 
   if (password !== passwordRepeat) {
@@ -106,7 +106,7 @@ export const register = async (previousState, formData) => {
   try {
     connectToDb();
 
-    const user = await User.findOne({ username });
+    const user = await User.findOne({ email });
 
     if (user) {
       return { error: "Username already exists" };
@@ -116,8 +116,10 @@ export const register = async (previousState, formData) => {
     const hashedPassword = await bcrypt.hash(password, salt);
 
     const newUser = new User({
-      username,
+      firstName,
+      lastName,
       email,
+      phoneNumber,
       password: hashedPassword,
       img,
     });

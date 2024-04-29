@@ -1,24 +1,129 @@
-.form{
+ .form{
   display: flex;
   flex-direction: column;
   text-align: center;
   gap: 30px;
 }
 
-.form input{
+
+
+.form button{
   padding: 20px;
+  cursor: pointer;
+  background-color: #213257;
+  ;
+  color: var(--textColor);
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+} 
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldGroup label {
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.fieldGroup input {
+  padding: 10px;
   background-color: var(--bg);
   color: var(--textColor);
   border: none;
   border-radius: 5px;
 }
 
-.form button{
-  padding: 20px;
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+.loginLink {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
+/* 3rd edit  */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.fieldRow {
+  display: flex;
+  gap: 20px;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.fieldGroup label {
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.fieldGroup input {
+  padding: 10px;
+  background-color: var(--bg);
+  color: var(--textColor);
+  border: none;
+  border-radius: 5px;
+}
+
+.form button {
+  padding: 15px 30px;
   cursor: pointer;
-  background-color: var(--btn);
+  background-color: #213257;
   color: var(--textColor);
   font-weight: bold;
   border: none;
   border-radius: 5px;
+  width: 100%;
+}
+
+
+
+
+.loginLink {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.googleButton {
+  padding: 15px 30px;
+  cursor: pointer;
+  background-color: white; /* Google Red color */
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+.passwordOptions {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.passwordOptions label {
+  font-size: 14px;
+  margin-left: 5px; /* Add a margin to separate the label from the checkbox */
 }

@@ -1,4 +1,5 @@
 export const authConfig = {
+  secret:"Shanmuga123456",
   pages: {
     signIn: "/login",
   },

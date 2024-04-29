@@ -1,12 +1,39 @@
-.container{
+.container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
+  /* Stretch children to equal height */
+  height: 100vh;
+  /* Fill entire vertical height of the viewport */
 }
 
-.wrapper{
-  width: 500px;
-  background-color: var(--bgSoft);
+.leftSide {
+  width: 28%;
+  /* 35% width for the left side */
+  background-color: #213257;
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  /* Navy blue background */
+}
+
+.rightSide {
+  flex: 1;
+  /* Take up remaining space */
+  background-color: white;
+  /* White background */
+  display: flex;
+  justify-content: center;
+  /* Center the content horizontally */
+  align-items: center;
+  /* Center the content vertically */
+}
+
+.wrapper {
+  width: 80%;
+  /* Adjust the width of the form wrapper */
+  max-width: 500px;
+  /* Set maximum width for better readability */
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -15,3 +42,12 @@
   border-radius: 5px;
 }
 
+.svgImage {
+  max-width: 100%;
+  /* Adjust the width of the SVG image */
+  height: auto;
+  /* Maintain aspect ratio */
+  position: absolute;
+  right: -15%;
+  
+}
